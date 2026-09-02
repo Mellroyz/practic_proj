@@ -1,0 +1,3 @@
+@include font-face('Inter-Regular', '@/assets/fonts/Inter-Regular/Inter-Regular', $weight: 400, $style: null, $exts: woff2 woff ttf);
+@include font-face('Inter-Medium', '@/assets/fonts/Inter-Medium/Inter-Medium', $weight: 500, $style: null, $exts: woff2 woff ttf);
+@include font-face('Inter-Bold', '@/assets/fonts/Inter-Bold/Inter-Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);
