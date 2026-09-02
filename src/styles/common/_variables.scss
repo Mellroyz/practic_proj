@@ -1,0 +1,43 @@
+$font-family-base: 'TT Norms Std Trial Condensed', sans-serif;
+$font-family-tt-norms: 'TT Norms Std Trial Condensed', sans-serif;
+$font-family-main: $font-family-tt-norms;
+
+$font-size-base: 14px;
+
+$breakpoint-mobile: 375px;
+$breakpoint-mobile-lg: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1200px;
+$breakpoint-wide: 1440px;
+
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+$font-weight-base: $font-weight-normal;
+
+$color-background-primary: #FEFEFE;
+$color-background-secondary: #8994a3;
+$color-text-primary: #10161f;
+$color-text-secondary: #1d2633;
+$color-svg-icon: #45aef5;
+
+$color-text-main: #ffffff;
+
+$color-brand-primary: #A95094;
+$color-yellow: #FFC464;
+$color-white: #ffffff;
+$color-black: #1a1a1a;
+
+$h1: 42px;
+$h2: 32px;
+$h3: 24px;
+$h4: 20px;
+$h5: 18px;
+$h6: 14px;

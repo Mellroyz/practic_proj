@@ -1,0 +1,26 @@
+footer.footer {
+    .footer__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    hr {
+        border-bottom-color: $color-background-secondary;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .footer__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 0;
+    }
+
+    .footer__inc--gray {
+        color: $color-text-secondary;
+    }
+}
