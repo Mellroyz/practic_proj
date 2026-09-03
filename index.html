@@ -1,27 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практика | Практика 2026</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixper — Диагностика и ремонт</title>
+    <link rel="stylesheet" href="src/styles/main.css" />
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            HEADER
-        </header>
-        <div class="content">
-            <main class="main">
-                MAIN
-            </main>
+    <header class="header">
+        <div class="header__left">
+            <div class="header__logo">
+                <img src="src/assets/favicon/icon-fixper.png" alt="Fixper logo" />
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="#">Диагностика</a></li>
+                    <li><a href="#">Стоимость</a></li>
+                    <li><a href="#">Мастера</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Вопросы</a></li>
+                </ul>
+            </nav>
         </div>
-        <footer class="footer">
-            FOOTER
-        </footer>
-    </div>
+        <div class="header__right">
+            <div class="header__location">
+                <img src="src/assets/favicon/geo.png" alt="Геолокация" class="header__geo-icon" />
+                <span class="header__city">Москва</span>
+            </div>
+            <button class="header__btn-order">Позвонить</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__images">
+            <img src="src/assets/favicon/+fon.png" alt="Фон1" class="hero__fon1" />
+            <img src="src/assets/favicon/StylarMashinka.png" alt="Стиральная машина" class="hero__machine" />
+            <img src="src/assets/favicon/repairman 1-3.png" alt="Мастер" class="hero__repairman" />
+            <img src="src/assets/favicon/Remont1.png" alt="Ремонт" class="hero__remontnadpis" />
+            <button class="hero__btn-call">Заказать звонок</button>
+        </div>
+    </section>
+
+    <div class="notification">
+    <button class="notification__close">×</button>
+    <span class="notification__text">
+        <span class="notification__text--yellow">🟢 Мы открыты и принимаем заказы до 21:00</span>, позвоните сейчас и мы сделаем скидку 15%
+    </span>
+    <button class="notification__btn">Получить скидку ⟶</button>
+</div>
+
+    <footer class="footer">
+        <p></p>
+    </footer>
+
     <script type="module" src="src/main.ts"></script>
 </body>
-
 </html>
