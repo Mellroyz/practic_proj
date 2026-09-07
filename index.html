@@ -10,9 +10,7 @@
 <body>
     <header class="header">
         <div class="header__left">
-            <div class="header__logo">
-                <img src="src/assets/favicon/icon-fixper.png" alt="Fixper logo" />
-            </div>
+            <div class="header__logo"></div>
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li><a href="#">Диагностика</a></li>
@@ -25,7 +23,7 @@
         </div>
         <div class="header__right">
             <div class="header__location">
-                <img src="src/assets/favicon/geo.png" alt="Геолокация" class="header__geo-icon" />
+                <span class="header__geo-icon"></span>
                 <span class="header__city">Москва</span>
             </div>
             <button class="header__btn-order">Позвонить</button>
@@ -34,25 +32,42 @@
 
     <section class="hero">
         <div class="hero__images">
-            <img src="src/assets/favicon/+fon.png" alt="Фон1" class="hero__fon1" />
-            <img src="src/assets/favicon/StylarMashinka.png" alt="Стиральная машина" class="hero__machine" />
-            <img src="src/assets/favicon/repairman 1-3.png" alt="Мастер" class="hero__repairman" />
-            <img src="src/assets/favicon/Remont1.png" alt="Ремонт" class="hero__remontnadpis" />
+            <div class="hero__fon-combined"></div>
+            <div class="hero__content">
+                <h1>Ремонт стиральных машин на дому с годовой гарантией</h1>
+                <p class="hero__description">
+                    <span class="hero__description--yellow">Отремонтируем на дому</span>
+                    <span class="hero__description--white">или бесплатно завезем и доставим обратно из сервисного центра</span>
+                </p>
+            </div>
             <button class="hero__btn-call">Заказать звонок</button>
         </div>
     </section>
 
-    <div class="notification">
-    <button class="notification__close">×</button>
-    <span class="notification__text">
-        <span class="notification__text--yellow">🟢 Мы открыты и принимаем заказы до 21:00</span>, позвоните сейчас и мы сделаем скидку 15%
-    </span>
-    <button class="notification__btn">Получить скидку ⟶</button>
-</div>
+    <div class="notification" id="notification">
+        <button class="notification__close" id="notificationClose">×</button>
+        <span class="notification__text">
+            <span class="notification__text--yellow">🟢 Мы открыты и принимаем заказы до 21:00</span>, позвоните сейчас и мы сделаем скидку 15%
+        </span>
+        <button class="notification__btn" id="notificationBtn">Получить скидку ⟶</button>
+    </div>
 
     <footer class="footer">
-        <p></p>
+        <p>© 2026 Fixper — диагностика и ремонт</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeBtn = document.getElementById('notificationClose');
+            const notification = document.getElementById('notification');
+            
+            if (closeBtn && notification) {
+                closeBtn.addEventListener('click', function() {
+                    notification.style.display = 'none';
+                });
+            }
+        });
+    </script>
 
     <script type="module" src="src/main.ts"></script>
 </body>

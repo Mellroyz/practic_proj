@@ -1,17 +1,31 @@
-.background {
-    display: flex;
-    width: 1440px;
-    width: 850px;
+@import '../common/variables';
+
+.header,
+.header__nav-list,
+.header__nav-list a,
+.header__location,
+.header__city,
+.header__btn-order,
+.hero h1,
+.hero__description,
+.hero__btn-call,
+.notification,
+.notification__close,
+.notification__text,
+.notification__btn,
+.footer {
+    font-family: $font-family-main;
+    color: $color-text-main;
 }
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 100px;
-    background: #A95094;
-    color: #fff;
+    padding: $padding-header;
+    background: $color-header-bg;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: $gap-header;
 }
 
 .header__left {
@@ -20,23 +34,26 @@
     gap: 40px;
 }
 
-.header__logo img {
-    width: 80.3px;
-    height: 24.2px;
-    border-radius: 10px;
+.header__logo {
+    width: $logo-width;
+    height: $logo-height;
+    background-image: url('src/assets/favicon/icon-fixper.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: $border-radius-logo;
     display: block;
 }
 
 .header__nav-list {
     display: flex;
     list-style: none;
-    gap: 32px;
-    font-weight: 500;
-    font-size: 16px;
+    gap: $gap-nav;
+    font-weight: $font-weight-medium;
+    font-size: $font-size-nav;
 }
 
 .header__nav-list a {
-    color: #fff;
     text-decoration: none;
 }
 
@@ -47,20 +64,24 @@
 .header__right {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: $gap-right;
 }
 
 .header__location {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: $font-weight-medium;
+    font-size: $font-size-nav;
 }
 
 .header__geo-icon {
-    width: 20px;
-    height: 20px;
+    width: $geo-icon-size;
+    height: $geo-icon-size;
+    background-image: url('src/assets/favicon/geo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     display: block;
 }
 
@@ -69,36 +90,33 @@
 }
 
 .header__btn-order {
-    background: #A95094;
-    color: #fff;
-    border: 2px solid #FFC464;
-    width: 162px;
-    height: 55px;
+    background: $color-header-bg;
+    border: 2px solid $color-yellow;
+    width: $btn-order-width;
+    height: $btn-order-height;
     padding: 10px 28px;
-    border-radius: 40px;
-    font-weight: 600;
-    font-size: 15px;
+    border-radius: $border-radius-btn;
+    font-weight: $font-weight-semi-bold;
+    font-size: $font-size-btn;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: $shadow-btn;
     white-space: nowrap;
 }
 
 .header__btn-order:hover {
-    background: #FFC464;
-    color: #1a1a1a;
-    border-color: #FFC464;
+    background: $color-yellow;
+    color: $color-black !important;
+    border-color: $color-yellow;
 }
 
 .hero {
     height: 900px;
     width: 100%;
-    background: #A95094;
+    background: $color-header-bg;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    text-align: center;
     padding: 20px;
     position: relative;
     overflow: hidden;
@@ -112,69 +130,74 @@
     margin: 0 auto;
 }
 
-.hero__machine {
+.hero__fon-combined {
     position: absolute;
-    width: 418px;
-    height: 588px;
-    top: 100px;
-    left: -120px;
+    width: 100%;
+    height: 100%;
+    top: -129px;
+    left: -300px;
     z-index: 1;
+    background-image: url('src/assets/favicon/MashinkaRepairManFon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     display: block;
-    object-fit: contain;
 }
 
-.hero__repairman {
+.hero__content {
     position: absolute;
-    width: 781px;
-    height: 741px;
-    top: -20px;
-    left: -20px;
-    z-index: 2;
-    display: block;
-    object-fit: contain;
+    top: 25%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    max-width: 800px;
+    width: 100%;
+    padding: $padding-content;
+    text-align: left;
 }
 
-.hero__remontnadpis {
-    position: absolute;
-    width: 664px;
-    height: 265px;
-    top: 120px;
-    left: 480px;
-    z-index: 2;
-    display: block;
-    object-fit: contain;
+.hero h1 {
+    font-size: $font-size-h1;
+    font-weight: $font-weight-black;
+    margin: 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+    max-width: 500px;
 }
 
-.hero__fon1 {
-    position: absolute;
-    width: 448.5px;
-    height: 897px;
-    top: -160px;
-    left: 60px;
-    rotate: -180;
-    z-index: 0;
-    display: block;
-    object-fit: contain;
+.hero__description {
+    font-size: $font-size-description;
+    font-weight: $font-weight-medium;
+    margin-top: $margin-top-description;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+.hero__description--yellow {
+    color: $color-yellow !important;
+}
+
+.hero__description--white {
+    color: $color-white !important;
 }
 
 .hero__btn-call {
     position: absolute;
-    background: #1a1a1a;
-    color: #fff;
+    background: $color-black;
     border: none;
-    width: 222px;
-    height: 55px;
+    width: $btn-call-width;
+    height: $btn-call-height;
     padding: 10px 28px;
-    border-radius: 40px;
-    font-weight: 600;
-    font-size: 16px;
+    border-radius: $border-radius-btn;
+    font-weight: $font-weight-semi-bold;
+    font-size: $font-size-nav;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: $shadow-call;
     white-space: nowrap;
     top: 420px;
     left: 480px;
     z-index: 3;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
     border-radius: 15px;
 }
 
@@ -183,41 +206,27 @@
     transform: scale(1.02);
 }
 
-.hero__content {
-    position: relative;
-    z-index: 3;
-    max-width: 800px;
-    margin-top: 80px;
-}
-
-.hero h1 {
-    font-size: 42px;
-    margin: 0 auto;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
 .notification {
     position: absolute;
-    bottom: 30px;
-    left: 50%;
+    bottom: -80px;
+    left: 47%;
     transform: translateX(-50%);
-    width: 1170px;
-    height: 49px;
-    background: #1a1a1a;
-    border-radius: 12px;
+    width: $notification-width;
+    height: $notification-height;
+    background: $color-black;
+    border-radius: $border-radius-notification;
     z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 15px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: $shadow-notification;
     gap: 20px;
 }
 
 .notification__close {
     background: none;
     border: none;
-    color: #FFC464;
     font-size: 22px;
     cursor: pointer;
     padding: 0 10px 0 0;
@@ -227,27 +236,25 @@
 }
 
 .notification__close:hover {
-    color: #ffb347;
+    color: #ffb347 !important;
 }
 
 .notification__text {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: $font-size-nav;
+    font-weight: $font-weight-normal;
     text-align: center;
     flex: 1;
 }
 
 .notification__text--yellow {
-    color: #FFC464;
+    color: $color-yellow !important;
 }
 
 .notification__btn {
     background: none;
     border: none;
-    color: #FFC464;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: $font-weight-semi-bold;
+    font-size: $font-size-nav;
     cursor: pointer;
     padding: 0;
     transition: color 0.2s;
@@ -255,13 +262,12 @@
 }
 
 .notification__btn:hover {
-    color: #ffb347;
+    color: #ffb347 !important;
 }
 
 .footer {
-    background: #f4f4f5;
-    color: #aaa;
-    padding: 30px 100px;
+    background: $color-footer-bg;
+    padding: $padding-footer;
     text-align: center;
     font-size: 14px;
 }

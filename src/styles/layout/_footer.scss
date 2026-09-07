@@ -25,9 +25,9 @@ footer.footer {
     }
     
     .footer {
-    background: #2c0a3e;
+    background: $color-footer-bg;
     color: #aaa;
-    padding: 30px 100px;
+    padding: $padding-footer;
     text-align: center;
     font-size: 14px;
     }
