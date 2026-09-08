@@ -2,6 +2,8 @@ $font-family-base: 'Inter-Regular', sans-serif;
 $font-family-tt-norms: 'TT Norms Std Trial Condensed', sans-serif;
 $font-family-main: $font-family-tt-norms;
 
+$font-size-base: 14px;
+
 $font-weight-thin: 100;
 $font-weight-extra-light: 200;
 $font-weight-light: 300;
@@ -19,7 +21,6 @@ $color-text-primary: #10161f;
 $color-text-secondary: #1d2633;
 $color-svg-icon: #45aef5;
 
-//ТУТ МОЖНО ПОМЕНЯТЬ ЦВЕТ ВСЕМУ ТЕКСТУ НА САЙТЕ
 $color-text-main: #ffffff;
 
 $color-header-bg: #A95094;
@@ -28,55 +29,9 @@ $color-white: #ffffff;
 $color-black: #1a1a1a;
 $color-footer-bg: #f4f4f5;
 
-$line-height-base: 1.5;
-$font-size-base: 14px;
-$font-size-h1: 42px;
-$font-size-subtitle: 24px;
-$font-size-description: 18px;
-$font-size-nav: 16px;
-$font-size-btn: 15px;
-
 $h1: $font-size-base * 3;
 $h2: $font-size-base * 2;
 $h3: $font-size-base * 1.5;
 $h4: $font-size-base * 1.3;
 $h5: $font-size-base * 1.2;
 $h6: $font-size-base * 1.1;
-
-$padding-header: 18px 100px;
-$padding-content: 20px;
-$padding-footer: 30px 100px;
-$margin-top-description: 15px;
-$gap-header: 20px;
-$gap-nav: 32px;
-$gap-right: 30px;
-
-$border-radius-btn: 40px;
-$border-radius-logo: 10px;
-$border-radius-notification: 12px;
-
-$logo-width: 80.3px;
-$logo-height: 24.2px;
-$geo-icon-size: 20px;
-$btn-order-width: 162px;
-$btn-order-height: 55px;
-$btn-call-width: 222px;
-$btn-call-height: 55px;
-$notification-width: 1170px;
-$notification-height: 49px;
-
-$shadow-btn: 0 4px 10px rgba(0, 0, 0, 0.15);
-$shadow-call: 0 4px 15px rgba(0, 0, 0, 0.3);
-$shadow-notification: 0 8px 30px rgba(0, 0, 0, 0.5);
-
-$desktop_lg: 2250;
-$desktop_md: 1920;
-$desktop_sm: 1700;
-$laptop_lg: 1500;
-$laptop_md: 1300;
-$laptop_sm: 1199;
-$tablet: 991;
-$mobile_lg: 767;
-$mobile_md: 639;
-$mobile_sm: 479;
-$mobile_xs: 360;

@@ -1,14 +1,5 @@
-@include font-face('Inter-Regular', '@/assets/fonts/Inter-Regular/Inter-Regular', $weight: 400, $style: null, $exts: woff2 woff ttf);
-@include font-face('Inter-Medium', '@/assets/fonts/Inter-Medium/Inter-Medium', $weight: 500, $style: null, $exts: woff2 woff ttf);
-@include font-face('Inter-Bold', '@/assets/fonts/Inter-Bold/Inter-Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);
-
 @import 'mixins/font-face';
 
-@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms/TTNorms-Std-Trial-Condensed-Thin', $weight: 100, $exts: otf);
-@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms/TTNorms-Std-Trial-Condensed-ExtraLight', $weight: 200, $exts: otf);
-@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms/TTNorms-Std-Trial-Condensed-Light', $weight: 300, $exts: otf);
-@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms/TTNorms-Std-Trial-Condensed-Regular', $weight: 400, $exts: otf);
-@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms/TTNorms-Std-Trial-Condensed-Medium', $weight: 500, $exts: otf);
-@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms/TTNorms-Std-Trial-Condensed-Bold', $weight: 700, $exts: otf);
-@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms/TTNorms-Std-Trial-Condensed-ExtraBold', $weight: 800, $exts: otf);
-@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms/TTNorms-Std-Trial-Condensed-Black', $weight: 900, $exts: otf);
+@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms/TTNormsStdCond-Regular', $weight: 400, $style: null, $exts: woff2 woff ttf);
+@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms/TTNormsStdCond-Medium', $weight: 500, $style: null, $exts: woff2 woff ttf);
+@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms/TTNormsStdCond-Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);

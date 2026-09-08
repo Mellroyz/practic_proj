@@ -9,38 +9,44 @@
 
 <body>
     <header class="header">
-        <div class="header__left">
-            <div class="header__logo"></div>
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li><a href="#">Диагностика</a></li>
-                    <li><a href="#">Стоимость</a></li>
-                    <li><a href="#">Мастера</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Вопросы</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header__right">
-            <div class="header__location">
-                <span class="header__geo-icon"></span>
-                <span class="header__city">Москва</span>
+        <div class="container header__container">
+            <div class="header__left">
+                <a href="#" class="header__logo-link">
+                    <img src="src/assets/favicon/icon-fixper.png" alt="Fixper logo" class="header__logo" />
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li><a href="#">Диагностика</a></li>
+                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#">Мастера</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Вопросы</a></li>
+                    </ul>
+                </nav>
             </div>
-            <button class="header__btn-order">Позвонить</button>
+            <div class="header__right">
+                <div class="header__location">
+                    <span class="header__geo-icon"></span>
+                    <span class="header__city">Москва</span>
+                </div>
+                <button class="header__btn-order">Позвонить</button>
+            </div>
         </div>
     </header>
 
     <section class="hero">
-        <div class="hero__images">
-            <div class="hero__fon-combined"></div>
-            <div class="hero__content">
-                <h1>Ремонт стиральных машин на дому с годовой гарантией</h1>
-                <p class="hero__description">
-                    <span class="hero__description--yellow">Отремонтируем на дому</span>
-                    <span class="hero__description--white">или бесплатно завезем и доставим обратно из сервисного центра</span>
-                </p>
+        <div class="container hero__container">
+            <div class="hero__images">
+                <div class="hero__fon-combined"></div>
+                <div class="hero__content">
+                    <h1>Ремонт стиральных машин на дому с годовой гарантией</h1>
+                    <p class="hero__description">
+                        <span class="hero__description--yellow">Отремонтируем на дому</span>
+                        <span class="hero__description--white">или бесплатно завезем и доставим обратно из сервисного центра</span>
+                    </p>
+                </div>
+                <button class="hero__btn-call">Заказать звонок</button>
             </div>
-            <button class="hero__btn-call">Заказать звонок</button>
         </div>
     </section>
 
@@ -53,21 +59,10 @@
     </div>
 
     <footer class="footer">
-        <p>© 2026 Fixper — диагностика и ремонт</p>
+        <div class="container footer__container">
+            <p></p>
+        </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const closeBtn = document.getElementById('notificationClose');
-            const notification = document.getElementById('notification');
-            
-            if (closeBtn && notification) {
-                closeBtn.addEventListener('click', function() {
-                    notification.style.display = 'none';
-                });
-            }
-        });
-    </script>
 
     <script type="module" src="src/main.ts"></script>
 </body>
