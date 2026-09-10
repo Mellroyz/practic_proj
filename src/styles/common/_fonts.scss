@@ -1,3 +1,6 @@
-@include font-face('Inter-Regular', '@/assets/fonts/Inter-Regular/Inter-Regular', $weight: 400, $style: null, $exts: woff2 woff ttf);
-@include font-face('Inter-Medium', '@/assets/fonts/Inter-Medium/Inter-Medium', $weight: 500, $style: null, $exts: woff2 woff ttf);
-@include font-face('Inter-Bold', '@/assets/fonts/Inter-Bold/Inter-Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);
+@import 'mixins/font-face';
+
+@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms (Regular)/TTNormsStdCond-Regular', $weight: 400, $style: null, $exts: woff2 woff ttf);
+@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms (Medium)/TTNormsStdCond-Medium', $weight: 500, $style: null, $exts: woff2 woff ttf);
+@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms (Bold)/TTNormsStdCond-Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);
+@include font-face('TT Norms Std Trial Condensed', '@/assets/fonts/TT-Norms (ExtraBold)/TTNormsStdCond-XBold', $weight: 800, $style: null, $exts: woff2 woff ttf);
