@@ -1,27 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практика | Практика 2026</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixper — Диагностика и ремонт</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            HEADER
-        </header>
-        <div class="content">
-            <main class="main">
-                MAIN
-            </main>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__left">
+                <a href="#" class="header__logo-link">
+                    <img src="src/assets/images/icon-fixper.png" alt="Fixper logo" class="header__logo" />
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li><a href="#">Диагностика</a></li>
+                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#">Мастера</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Вопросы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <div class="header__location">
+                    <span class="header__geo-icon"></span>
+                    <span class="header__city">Москва</span>
+                </div>
+                <button class="header__btn-order">Позвонить</button>
+            </div>
         </div>
-        <footer class="footer">
-            FOOTER
-        </footer>
+    </header>
+
+    <div class="content">
+        <main class="main">
+            <section class="hero">
+                <div class="container hero__container">
+                    <div class="hero__images">
+                        <div class="hero__fon-combined"></div>
+                        <div class="hero__content">
+                            <h1>Ремонт стиральных<br>машин на дому с<br>годовой гарантией</h1>
+                            <p class="hero__description">
+                                <span class="hero__description--yellow">Отремонтируем на дому</span>
+                                <span class="hero__description--white">или бесплатно завезем и доставим обратно из сервисного центра</span>
+                            </p>
+                        </div>
+                        <button class="hero__btn-call">Заказать звонок</button>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+
+    <div class="notification" id="notification">
+        <button class="notification__close" id="notificationClose">×</button>
+        <span class="notification__text">
+            <span class="notification__text--yellow">🟢 Мы открыты и принимаем заказы до 21:00</span>, позвоните сейчас и мы сделаем скидку 15%
+        </span>
+        <button class="notification__btn" id="notificationBtn">Получить скидку ⟶</button>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p></p>
+        </div>
+    </footer>
+
     <script type="module" src="src/main.ts"></script>
 </body>
-
 </html>

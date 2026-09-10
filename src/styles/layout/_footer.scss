@@ -23,4 +23,12 @@ footer.footer {
     .footer__inc--gray {
         color: $color-text-secondary;
     }
+    
+    .footer {
+    background: $color-footer-bg;
+    color: #aaa;
+    padding: $padding-footer;
+    text-align: center;
+    font-size: 14px;
+    }
 }
