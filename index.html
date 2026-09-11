@@ -15,7 +15,7 @@
                 </a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li><a href="#">Диагностика</a></li>
+                        <li><a href="#diagnostic">Диагностика</a></li>
                         <li><a href="#">Стоимость</a></li>
                         <li><a href="#">Мастера</a></li>
                         <li><a href="#">Отзывы</a></li>
@@ -38,7 +38,6 @@
             <section class="hero">
                 <div class="container hero__container">
                     <div class="hero__images">
-                        <div class="hero__fon-combined"></div>
                         <div class="hero__content">
                             <h1>Ремонт стиральных<br>машин на дому с<br>годовой гарантией</h1>
                             <p class="hero__description">
@@ -50,6 +49,62 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Футер (теперь внутри main.main) -->
+            <footer class="main__footer">
+                <div class="container main__container">
+                    <div class="main__features">
+                        <article class="main__feature">
+                            <img src="src/assets/images/infoOsaite/1Info.png" alt="" class="main__feature-image" />
+                            <p class="main__feature-text">Фирменные запчасти<br>у мастеров в наличии</p>
+                        </article>
+                        <article class="main__feature">
+                            <img src="src/assets/images/infoOsaite/2info.png" alt="" class="main__feature-image" />
+                            <p class="main__feature-text">Большинство<br>ремонтов делаем<br>за час на дому</p>
+                        </article>
+                        <article class="main__feature">
+                            <img src="src/assets/images/infoOsaite/3info.png" alt="" class="main__feature-image" />
+                            <p class="main__feature-text">Профессиональный<br>инструмент под<br>любую задачу</p>
+                        </article>
+                        <article class="main__feature">
+                            <img src="src/assets/images/infoOsaite/4info.png" alt="" class="main__feature-image" />
+                            <p class="main__feature-text">Квалифицированные<br>и опытные мастера</p>
+                        </article>
+                    </div>
+
+                    <div class="main__bottom" id="diagnostic">
+                        <img src="src/assets/images/Zvezda.png" alt="" class="main__star" />
+                        <div class="main__diagnostic">
+                            <p class="main__diagnostic-label">ОНЛАЙН-ДИАГНОСТИКА</p>
+                            <h2 class="main__diagnostic-title">Какая у вас проблема?</h2>
+                            <div class="main__diagnostic-options">
+                                <div class="main__diagnostic-row">
+                                    <button type="button" class="main__diagnostic-option main__diagnostic-option--active">Не включается</button>
+                                    <button type="button" class="main__diagnostic-option">Не выключается</button>
+                                    <button type="button" class="main__diagnostic-option">Не нагревает воду</button>
+                                </div>
+                                <div class="main__diagnostic-row">
+                                    <button type="button" class="main__diagnostic-option main__diagnostic-option--wide">Все работает, но мне скучно и я хочу пообщаться с мастером</button>
+                                </div>
+                                <div class="main__diagnostic-row">
+                                    <button type="button" class="main__diagnostic-option">Не крутится барабан</button>
+                                    <button type="button" class="main__diagnostic-option">Не работает кнопка включения</button>
+                                </div>
+                                <div class="main__diagnostic-row">
+                                    <button type="button" class="main__diagnostic-option">Не выключается</button>
+                                    <button type="button" class="main__diagnostic-option">Иная проблема</button>
+                                    <button type="button" class="main__diagnostic-option">Не крутится барабан</button>
+                                </div>
+                                <div class="main__diagnostic-row">
+                                    <button type="button" class="main__diagnostic-option">Не крутится барабан</button>
+                                    <button type="button" class="main__diagnostic-option">Не работает кнопка включения</button>
+                                </div>
+                            </div>
+                            <p class="main__diagnostic-hint"><span aria-hidden="true">△</span>Выберите проблему и узнайте её решение</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </main>
     </div>
 
@@ -60,12 +115,6 @@
         </span>
         <button class="notification__btn" id="notificationBtn">Получить скидку ⟶</button>
     </div>
-
-    <footer class="footer">
-        <div class="container footer__container">
-            <p></p>
-        </div>
-    </footer>
 
     <script type="module" src="src/main.ts"></script>
 </body>
