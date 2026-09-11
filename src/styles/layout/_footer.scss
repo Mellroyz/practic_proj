@@ -1,4 +1,215 @@
 footer.footer {
+    min-height: 900px;
+    padding: 120px 15px;
+    background: #ffffff;
+    color: #171717;
+
+    .footer__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer__features {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1200px;
+        margin: 0 auto 120px;
+    }
+
+    .footer__bottom {
+        scroll-margin-top: 100px;
+        width: 100vw;
+        height: 818px;
+        min-height: 818px;
+        margin-left: calc((100% - 100vw) / 2);
+        background-color: #f5f5f5;
+        background-image: url('../assets/images/MashinkaSFonovStr2.png');
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 590px 813px;
+    }
+
+    .footer__diagnostic {
+        width: 720px;
+        padding: 62px 0 0 135px;
+    }
+
+    .footer__diagnostic-label {
+        width: 184px;
+        height: 15px;
+        margin: 0 0 14px;
+        color: #aa3c94;
+        font-family: 'TT Norms Std Trial Condensed', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.4px;
+    }
+
+    .footer__diagnostic-title {
+        width: 476px;
+        height: 40px;
+        margin: 0 0 36px;
+        color: #111111;
+        font-family: 'TT Norms Std Trial Condensed', sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.675px;
+    }
+
+    .footer__diagnostic-options {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .footer__diagnostic-row {
+        display: flex;
+        gap: 15px;
+    }
+
+    .footer__diagnostic-option {
+        width: 180px;
+        height: 55px;
+        padding: 12px 24px;
+        border: 1px solid #aa3c94;
+        border-radius: 10px;
+        background: #ffffff;
+        color: #aa3c94;
+        font-family: 'TT Norms Std Trial Condensed', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: default;
+    }
+
+    .footer__diagnostic-option--active {
+        background: #9b3189;
+        color: #ffffff;
+    }
+
+    .footer__diagnostic-option--wide {
+        width: 650px;
+    }
+
+    .footer__diagnostic-row:nth-child(1) .footer__diagnostic-option:nth-child(1) {
+        width: 210px;
+    }
+
+    .footer__diagnostic-row:nth-child(1) .footer__diagnostic-option:nth-child(3) {
+        width: 240px;
+    }
+
+    .footer__diagnostic-row:nth-child(1) .footer__diagnostic-option:nth-child(2) {
+        width: 225px;
+    }
+
+    .footer__diagnostic-row:nth-child(3) .footer__diagnostic-option {
+        width: 265px;
+    }
+
+    .footer__diagnostic-row:nth-child(3) .footer__diagnostic-option:nth-child(2) {
+        width: 365px;
+    }
+
+    .footer__diagnostic-row:nth-child(4) .footer__diagnostic-option:nth-child(1) {
+        width: 210px;
+    }
+
+    .footer__diagnostic-row:nth-child(4) .footer__diagnostic-option:nth-child(2) {
+        width: 215px;
+    }
+
+    .footer__diagnostic-row:nth-child(4) .footer__diagnostic-option:nth-child(3) {
+        width: 265px;
+    }
+
+    .footer__diagnostic-row:nth-child(5) .footer__diagnostic-option {
+        width: 265px;
+    }
+
+    .footer__diagnostic-row:nth-child(5) .footer__diagnostic-option:nth-child(2) {
+        width: 365px;
+    }
+
+    .footer__diagnostic-hint {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        width: 650px;
+        height: 28px;
+        margin: 48px 0 0;
+        color: #171717;
+        font-family: 'TT Norms Std Trial Condensed', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .footer__diagnostic-hint span {
+        color: #ffb347;
+        font-size: 28px;
+        line-height: 1;
+    }
+
+    .footer__feature {
+        min-height: 280px;
+        padding: 0 38px;
+        border-right: 1px solid #eeeeee;
+    }
+
+    .footer__feature:last-child {
+        border-right: none;
+    }
+
+    .footer__feature-text {
+        margin: 0;
+        width: 207px;
+        font-family: $font-family-main;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .footer__feature-image {
+        display: block;
+        object-fit: contain;
+        margin-bottom: 28px;
+    }
+
+    .footer__feature:nth-child(1) .footer__feature-image {
+        width: 112px;
+        height: 75px;
+    }
+
+    .footer__feature:nth-child(2) .footer__feature-image {
+        width: 105px;
+        height: 74px;
+    }
+
+    .footer__feature:nth-child(3) .footer__feature-image {
+        width: 72.83px;
+        height: 75px;
+    }
+
+    .footer__feature:nth-child(4) .footer__feature-image {
+        width: 90.52px;
+        height: 75px;
+    }
+
+    .footer__feature:nth-child(1) .footer__feature-text {
+        height: 52px;
+    }
+
+    .footer__feature:nth-child(2) .footer__feature-text,
+    .footer__feature:nth-child(3) .footer__feature-text {
+        height: 72px;
+    }
+
+    .footer__feature:nth-child(4) .footer__feature-text {
+        height: 48px;
+    }
+
     .footer__content{
         display: flex;
         flex-direction: column;
