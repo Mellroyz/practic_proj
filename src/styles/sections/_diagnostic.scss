@@ -1,0 +1,149 @@
+.diagnostic {
+    position: relative;
+    scroll-margin-top: 100px;
+    width: 100vw;
+    height: 818px;
+    min-height: 818px;
+    margin-left: calc((100% - 100vw) / 2);
+    background-color: #f5f5f5;
+    background-image: url('../assets/images/MashinkaSFonovStr2.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 590px 813px;
+    overflow: hidden;
+}
+
+.diagnostic__star {
+    position: absolute;
+    top: 60px;
+    right: 160px;
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.diagnostic__content {
+    position: relative;
+    z-index: 1;
+    width: 720px;
+    padding: 62px 0 0 135px;
+}
+
+.diagnostic__label {
+    width: 184px;
+    height: 15px;
+    margin: 0 0 14px;
+    color: #aa3c94;
+    font-family: 'TT Norms Std Trial Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.4px;
+}
+
+.diagnostic__title {
+    width: 476px;
+    height: 40px;
+    margin: 0 0 36px;
+    color: #111111;
+    font-family: 'TT Norms Std Trial Condensed', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.675px;
+}
+
+.diagnostic__options {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.diagnostic__row {
+    display: flex;
+    gap: 15px;
+}
+
+.diagnostic__option {
+    width: 180px;
+    height: 55px;
+    padding: 12px 24px;
+    border: 1px solid #aa3c94;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #aa3c94;
+    font-family: 'TT Norms Std Trial Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: default;
+}
+
+.diagnostic__option--active {
+    background: #9b3189;
+    color: #ffffff;
+}
+
+.diagnostic__option--wide {
+    width: 650px;
+}
+
+.diagnostic__row:nth-child(1) .diagnostic__option:nth-child(1) {
+    width: 210px;
+}
+
+.diagnostic__row:nth-child(1) .diagnostic__option:nth-child(2) {
+    width: 225px;
+}
+
+.diagnostic__row:nth-child(1) .diagnostic__option:nth-child(3) {
+    width: 240px;
+}
+
+.diagnostic__row:nth-child(3) .diagnostic__option {
+    width: 265px;
+}
+
+.diagnostic__row:nth-child(3) .diagnostic__option:nth-child(2) {
+    width: 365px;
+}
+
+.diagnostic__row:nth-child(4) .diagnostic__option:nth-child(1) {
+    width: 210px;
+}
+
+.diagnostic__row:nth-child(4) .diagnostic__option:nth-child(2) {
+    width: 215px;
+}
+
+.diagnostic__row:nth-child(4) .diagnostic__option:nth-child(3) {
+    width: 265px;
+}
+
+.diagnostic__row:nth-child(5) .diagnostic__option {
+    width: 265px;
+}
+
+.diagnostic__row:nth-child(5) .diagnostic__option:nth-child(2) {
+    width: 365px;
+}
+
+.diagnostic__hint {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 650px;
+    height: 28px;
+    margin: 48px 0 0;
+    color: #171717;
+    font-family: 'TT Norms Std Trial Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.diagnostic__hint span {
+    color: #ffb347;
+    font-size: 28px;
+    line-height: 1;
+}

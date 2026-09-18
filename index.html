@@ -1,27 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практика | Практика 2026</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixper — Диагностика</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            HEADER
-        </header>
-        <div class="content">
-            <main class="main">
-                MAIN
-            </main>
+    <section class="diagnostic" id="diagnostic">
+        <img src="src/assets/images/Zvezda.png" alt="" class="diagnostic__star" />
+        <div class="diagnostic__content">
+            <p class="diagnostic__label">ОНЛАЙН-ДИАГНОСТИКА</p>
+            <h2 class="diagnostic__title">Какая у вас проблема?</h2>
+            <div class="diagnostic__options">
+                <div class="diagnostic__row">
+                    <button type="button" class="diagnostic__option diagnostic__option--active">Не включается</button>
+                    <button type="button" class="diagnostic__option">Не выключается</button>
+                    <button type="button" class="diagnostic__option">Не нагревает воду</button>
+                </div>
+                <div class="diagnostic__row">
+                    <button type="button" class="diagnostic__option diagnostic__option--wide">Все работает, но мне скучно и я хочу пообщаться с мастером</button>
+                </div>
+                <div class="diagnostic__row">
+                    <button type="button" class="diagnostic__option">Не крутится барабан</button>
+                    <button type="button" class="diagnostic__option">Не работает кнопка включения</button>
+                </div>
+                <div class="diagnostic__row">
+                    <button type="button" class="diagnostic__option">Не выключается</button>
+                    <button type="button" class="diagnostic__option">Иная проблема</button>
+                    <button type="button" class="diagnostic__option">Не крутится барабан</button>
+                </div>
+                <div class="diagnostic__row">
+                    <button type="button" class="diagnostic__option">Не крутится барабан</button>
+                    <button type="button" class="diagnostic__option">Не работает кнопка включения</button>
+                </div>
+            </div>
+            <p class="diagnostic__hint"><span aria-hidden="true">△</span>Выберите проблему и узнайте её решение</p>
         </div>
-        <footer class="footer">
-            FOOTER
-        </footer>
-    </div>
+    </section>
+
     <script type="module" src="src/main.ts"></script>
 </body>
-
 </html>
