@@ -3,113 +3,41 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fixper — Диагностика и ремонт</title>
+    <title>Fixper — Диагностика</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header__container">
-            <div class="header__left">
-                <a href="#" class="header__logo-link">
-                    <img src="src/assets/images/icon-fixper.png" alt="Fixper logo" class="header__logo" />
-                </a>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li><a href="#diagnostic">Диагностика</a></li>
-                        <li><a href="#">Стоимость</a></li>
-                        <li><a href="#">Мастера</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Вопросы</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__right">
-                <div class="header__location">
-                    <span class="header__geo-icon"></span>
-                    <span class="header__city">Москва</span>
+    <section class="diagnostic" id="diagnostic">
+        <img src="src/assets/images/Zvezda.png" alt="" class="diagnostic__star" />
+        <div class="diagnostic__content">
+            <p class="diagnostic__label">ОНЛАЙН-ДИАГНОСТИКА</p>
+            <h2 class="diagnostic__title">Какая у вас проблема?</h2>
+            <div class="diagnostic__options">
+                <div class="diagnostic__row">
+                    <button type="button" class="diagnostic__option diagnostic__option--active">Не включается</button>
+                    <button type="button" class="diagnostic__option">Не выключается</button>
+                    <button type="button" class="diagnostic__option">Не нагревает воду</button>
                 </div>
-                <button class="header__btn-order">Позвонить</button>
+                <div class="diagnostic__row">
+                    <button type="button" class="diagnostic__option diagnostic__option--wide">Все работает, но мне скучно и я хочу пообщаться с мастером</button>
+                </div>
+                <div class="diagnostic__row">
+                    <button type="button" class="diagnostic__option">Не крутится барабан</button>
+                    <button type="button" class="diagnostic__option">Не работает кнопка включения</button>
+                </div>
+                <div class="diagnostic__row">
+                    <button type="button" class="diagnostic__option">Не выключается</button>
+                    <button type="button" class="diagnostic__option">Иная проблема</button>
+                    <button type="button" class="diagnostic__option">Не крутится барабан</button>
+                </div>
+                <div class="diagnostic__row">
+                    <button type="button" class="diagnostic__option">Не крутится барабан</button>
+                    <button type="button" class="diagnostic__option">Не работает кнопка включения</button>
+                </div>
             </div>
+            <p class="diagnostic__hint"><span aria-hidden="true">△</span>Выберите проблему и узнайте её решение</p>
         </div>
-    </header>
-
-    <div class="content">
-        <main class="main">
-            <section class="hero">
-                <div class="container hero__container">
-                    <div class="hero__images">
-                        <div class="hero__content">
-                            <h1>Ремонт стиральных<br>машин на дому с<br>годовой гарантией</h1>
-                            <p class="hero__description">
-                                <span class="hero__description--yellow">Отремонтируем на дому</span>
-                                <span class="hero__description--white">или бесплатно завезем и доставим обратно из сервисного центра</span>
-                            </p>
-                        </div>
-                        <button class="hero__btn-call">Заказать звонок</button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Футер (теперь внутри main.main) -->
-            <footer class="main__footer">
-                <div class="container main__container">
-                    <div class="main__features">
-                        <article class="main__feature">
-                            <img src="src/assets/images/infoOsaite/1Info.png" alt="" class="main__feature-image" />
-                            <p class="main__feature-text">Фирменные запчасти<br>у мастеров в наличии</p>
-                        </article>
-                        <article class="main__feature">
-                            <img src="src/assets/images/infoOsaite/2info.png" alt="" class="main__feature-image" />
-                            <p class="main__feature-text">Большинство<br>ремонтов делаем<br>за час на дому</p>
-                        </article>
-                        <article class="main__feature">
-                            <img src="src/assets/images/infoOsaite/3info.png" alt="" class="main__feature-image" />
-                            <p class="main__feature-text">Профессиональный<br>инструмент под<br>любую задачу</p>
-                        </article>
-                        <article class="main__feature">
-                            <img src="src/assets/images/infoOsaite/4info.png" alt="" class="main__feature-image" />
-                            <p class="main__feature-text">Квалифицированные<br>и опытные мастера</p>
-                        </article>
-                    </div>
-
-                   <section class="diagnostic" id="diagnostic">
-                        <img src="src/assets/images/Zvezda.png" alt="" class="diagnostic__star" />
-                        <div class="diagnostic__content">
-                            <p class="diagnostic__label">ОНЛАЙН-ДИАГНОСТИКА</p>
-                            <h2 class="diagnostic__title">Какая у вас проблема?</h2>
-                            <div class="diagnostic__options">
-                                <div class="diagnostic__row">
-                                    <button type="button" class="diagnostic__option diagnostic__option--active">Не включается</button>
-                                    <button type="button" class="diagnostic__option">Не выключается</button>
-                                    <button type="button" class="diagnostic__option">Не нагревает воду</button>
-                                </div>
-                                <div class="diagnostic__row">
-                                    <button type="button" class="diagnostic__option diagnostic__option--wide">Все работает, но мне скучно и я хочу пообщаться с мастером</button>
-                                </div>
-                                <div class="diagnostic__row">
-                                    <button type="button" class="diagnostic__option">Не крутится барабан</button>
-                                    <button type="button" class="diagnostic__option">Не работает кнопка включения</button>
-                                </div>
-                                <div class="diagnostic__row">
-                                    <button type="button" class="diagnostic__option">Не выключается</button>
-                                    <button type="button" class="diagnostic__option">Иная проблема</button>
-                                    <button type="button" class="diagnostic__option">Не крутится барабан</button>
-                                </div>
-                                <div class="diagnostic__row">
-                                    <button type="button" class="diagnostic__option">Не крутится барабан</button>
-                                    <button type="button" class="diagnostic__option">Не работает кнопка включения</button>
-                                </div>
-                            </div>
-                            <p class="diagnostic__hint"><span aria-hidden="true">△</span>Выберите проблему и узнайте её решение</p>
-                        </div>
-                    </section>
-    <div class="notification" id="notification">
-        <button class="notification__close" id="notificationClose">×</button>
-        <span class="notification__text">
-            <span class="notification__text--yellow">🟢 Мы открыты и принимаем заказы до 21:00</span>, позвоните сейчас и мы сделаем скидку 15%
-        </span>
-        <button class="notification__btn" id="notificationBtn">Получить скидку ⟶</button>
-    </div>
+    </section>
 
     <script type="module" src="src/main.ts"></script>
 </body>
