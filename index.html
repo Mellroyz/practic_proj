@@ -16,7 +16,7 @@
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li><a href="#diagnostic">Диагностика</a></li>
-                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#pricing">Стоимость</a></li>
                         <li><a href="#">Мастера</a></li>
                         <li><a href="#">Отзывы</a></li>
                         <li><a href="#">Вопросы</a></li>
@@ -72,7 +72,7 @@
                         </article>
                     </div>
 
-                   <section class="diagnostic" id="diagnostic">
+                    <section class="diagnostic" id="diagnostic">
                         <img src="src/assets/images/Zvezda.png" alt="" class="diagnostic__star" />
                         <div class="diagnostic__content">
                             <p class="diagnostic__label">ОНЛАЙН-ДИАГНОСТИКА</p>
@@ -103,6 +103,60 @@
                             <p class="diagnostic__hint"><span aria-hidden="true">△</span>Выберите проблему и узнайте её решение</p>
                         </div>
                     </section>
+                </div>
+            </footer>
+
+            <section class="pricing" id="pricing">
+                <div class="pricing__container">
+                    <h2 class="pricing__title">Стоимость работ</h2>
+
+                    <div class="pricing__table">
+                        <div class="pricing__row pricing__row--header">
+                            <div class="pricing__cell pricing__cell--name pricing__cell--header">Услуга</div>
+                            <div class="pricing__cell pricing__cell--parts pricing__cell--header">Стоимость запчасти</div>
+                            <div class="pricing__cell pricing__cell--work pricing__cell--header">Стоимость работ</div>
+                        </div>
+
+                        <div class="pricing__row">
+                            <div class="pricing__cell pricing__cell--name">Выезд мастера</div>
+                            <div class="pricing__cell pricing__cell--parts"></div>
+                            <div class="pricing__cell pricing__cell--work pricing__cell--free">Бесплатно</div>
+                        </div>
+
+                        <div class="pricing__row">
+                            <div class="pricing__cell pricing__cell--name">Диагностика стиральной машины</div>
+                            <div class="pricing__cell pricing__cell--parts"></div>
+                            <div class="pricing__cell pricing__cell--work pricing__cell--free">Бесплатно</div>
+                        </div>
+
+                        <div class="pricing__row">
+                            <div class="pricing__cell pricing__cell--name">Замена блока питания</div>
+                            <div class="pricing__cell pricing__cell--parts">от 750₽</div>
+                            <div class="pricing__cell pricing__cell--work">900 ₽</div>
+                        </div>
+
+                        <div class="pricing__row">
+                            <div class="pricing__cell pricing__cell--name">Замена помпы</div>
+                            <div class="pricing__cell pricing__cell--parts">от 8880₽</div>
+                            <div class="pricing__cell pricing__cell--work">1900 ₽</div>
+                        </div>
+
+                        <div class="pricing__row">
+                            <div class="pricing__cell pricing__cell--name">Замена подшипников</div>
+                            <div class="pricing__cell pricing__cell--parts">от 1450₽</div>
+                            <div class="pricing__cell pricing__cell--work">750 ₽</div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="pricing__more">
+                        Показать все цены
+                        <span class="pricing__more-icon" aria-hidden="true">↻</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
     <div class="notification" id="notification">
         <button class="notification__close" id="notificationClose">×</button>
         <span class="notification__text">

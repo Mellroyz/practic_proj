@@ -1,0 +1,97 @@
+.pricing {
+    width: 100%;
+    background: #ffffff;
+    padding: 100px 20px;
+    scroll-margin-top: 30px;
+}
+
+.pricing__container {
+    max-width: 971px;
+    margin: 0 auto;
+}
+
+.pricing__title {
+    margin: 0 0 50px;
+    font-family: 'TT Norms Std Trial Condensed', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0;
+    color: #111111;
+    text-align: center;
+}
+
+.pricing__table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing__row {
+    display: grid;
+    grid-template-columns: 1fr 200px 200px;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.pricing__row--header {
+    padding: 0 0 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.pricing__cell {
+    font-family: 'TT Norms Std Trial Condensed', sans-serif;
+    font-size: 16px;
+    color: #111111;
+}
+
+.pricing__cell--name {
+    font-weight: 400;
+    text-align: left;
+}
+
+.pricing__cell--parts {
+    text-align: center;
+    font-weight: 700;
+}
+
+.pricing__cell--work {
+    text-align: right;
+    font-weight: 700;
+}
+
+.pricing__cell--free {
+    color: #aa3c94;
+    font-weight: 500;
+}
+
+.pricing__cell--header {
+    font-weight: 400;
+}
+
+.pricing__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    font-family: 'TT Norms Std Trial Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #aa3c94;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.pricing__more:hover {
+    opacity: 0.7;
+}
+
+.pricing__more-icon {
+    font-size: 20px;
+    line-height: 1;
+}
