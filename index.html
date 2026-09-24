@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Практика | Практика 2026</title>
 </head>
 
-<body>
-    <div class="wrapper">
+    <body>
+        <div class="wrapper">
         <header class="header">
-            HEADER
+            <div class="container header__container">
+                <div class="header__left">
+                    <a href="/" class="header__logo-link">
+                        <img src="src/assets/images/icon-fixper.png" alt="Fixper logo" class="header__logo" />
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li><a href="#">Диагностика</a></li>
+                            <li><a href="#">Стоимость</a></li>
+                            <li><a href="#">Мастера</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Вопросы</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__right">
+                    <div class="header__location">
+                        <span class="header__geo-icon"></span>
+                        <span class="header__city">Москва</span>
+                    </div>
+                    <button class="header__btn-order">Позвонить</button>
+                </div>
+            </div>
         </header>
         <div class="content">
             <main class="main">
                 MAIN
             </main>
         </div>
-        <footer class="footer">
-            FOOTER
-        </footer>
-    </div>
+        </div>
     <script type="module" src="src/main.ts"></script>
 </body>
-
 </html>
