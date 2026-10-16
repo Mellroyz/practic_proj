@@ -16,6 +16,12 @@ $mobile_lg: 767;
 $mobile_md: 639;
 $mobile_sm: 479;
 $mobile_xs: 360;
+$breakpoint-mobile: 375px;
+$breakpoint-mobile-lg: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1200px;
+$breakpoint-wide: 1440px;
 
 $font-weight-thin: 100;
 $font-weight-extra-light: 200;
@@ -37,13 +43,26 @@ $color-svg-icon: #45aef5;
 $color-text-main: #ffffff;
 
 $color-brand-primary: #A95094;
+$color-header-bg: $color-brand-primary;
 $color-yellow: #FFC464;
 $color-white: #ffffff;
 $color-black: #1a1a1a;
+$color-footer-bg: #f4f4f5;
 
+// Базовые размеры заголовков по макету
 $h1: 42px;
 $h2: 32px;
 $h3: 24px;
 $h4: 20px;
 $h5: 18px;
 $h6: 14px;
+
+/* Переменные для hero-секции */
+$font-size-description: 18px;
+$font-size-nav: 16px;
+$padding-content: 20px;
+$margin-top-description: 15px;
+$border-radius-btn: 40px;
+$btn-call-width: 222px;
+$btn-call-height: 55px;
+$shadow-call: 0 4px 15px rgba(0, 0, 0, 0.3);
