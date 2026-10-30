@@ -1,0 +1,125 @@
+
+.feature {
+    width: 100%;
+    margin: 60px 0;
+}
+
+.feature__items {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.feature__item {
+    flex: 1 1 calc((100% - 76px) / 4);
+    min-width: 0;
+    padding: 0 38px;
+    border-right: 1px solid #eeeeee;
+}
+
+.feature__item:first-child {
+    padding-left: 0;
+}
+
+.feature__item:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.feature__image {
+    aspect-ratio: 3 / 2;
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+    margin-bottom: 28px;
+    width: 112px;
+    height: auto;
+}
+
+.feature__text {
+    margin: 0;
+    font-family: $font-family-main;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@include max-w($tablet) {
+    .feature {
+        width: 100%;
+    }
+
+    .feature__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 6px;
+        padding: 0 24px;
+    }
+
+    .feature__item {
+        flex: 0 0 calc((100% - 6px) / 2);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 12px 8px 12px 22px;
+        border-right: none;
+    }
+
+    .feature__item:nth-child(even) {
+        padding-left: 0;
+    }
+
+    .feature__image {
+        flex: 0 0 72px;
+        margin: 0;
+    }
+
+    .feature__text {
+        flex: 1;
+        width: auto;
+        font-size: 20px;
+    }
+}
+
+@include max-w($mobile_lg) {
+    .feature {
+        margin: 24px 0;
+    }
+
+    .feature__items {
+        padding: 0 16px;
+        gap: 20px;
+    }
+
+    .feature__item {
+        flex-basis: 100%;
+        padding: 8px 14px 8px 30px;
+    }
+
+    .feature__item:nth-child(even) {
+        padding-left: 30px;
+    }
+
+    .feature__item:nth-child(1) {
+        order: 1;
+    }
+
+    .feature__item:nth-child(2) {
+        order: 3;
+    }
+
+    .feature__item:nth-child(3) {
+        order: 2;
+    }
+
+    .feature__item:nth-child(4) {
+        order: 4;
+    }
+
+    .feature__text {
+        font-size: clamp(18px, 5vw, 20px);
+    }
+
+    .feature__text br {
+        display: none;
+    }
+}
