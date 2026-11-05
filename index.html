@@ -18,7 +18,7 @@
                         </a>
                         <nav class="header__nav">
                             <ul class="header__nav-list">
-                                <li><a href="#">Диагностика</a></li>
+                                <li><a href="#diagnostic">Диагностика</a></li>
                                 <li><a href="#">Стоимость</a></li>
                                 <li><a href="#">Мастера</a></li>
                                 <li><a href="#">Отзывы</a></li>
@@ -44,7 +44,7 @@
                         </div>
                         <nav class="header__nav">
                             <ul class="header__nav-list">
-                                <li><a href="#">Диагностика</a></li>
+                                <li><a href="#diagnostic">Диагностика</a></li>
                                 <li><a href="#">Стоимость</a></li>
                                 <li><a href="#">Мастера</a></li>
                                 <li><a href="#">Отзывы</a></li>
@@ -99,6 +99,47 @@
                                 <img src="src/assets/images/InfoOSaite/4info.png" alt="" class="feature__image" />
                                 <p class="feature__text">Квалифицированные и опытные мастера</p>
                             </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="diagnostic" id="diagnostic">
+                    <div class="diagnostic__content">
+                        <div class="diagnostic__content-wrapper">
+                            <div class="diagnostic__text">
+                                <p class="diagnostic__label">ОНЛАЙН-ДИАГНОСТИКА</p>
+                                <h2 class="diagnostic__title">Какая у вас проблема?</h2>
+                            </div>
+                            <div class="diagnostic__options">
+                                <div class="diagnostic__row">
+                                    <button type="button" class="diagnostic__option diagnostic__option--active">Не включается</button>
+                                    <button type="button" class="diagnostic__option">Не выключается</button>
+                                    <button type="button" class="diagnostic__option">Не нагревает воду</button>
+                                    <button type="button" class="diagnostic__option diagnostic__option--wide">Все работает, но мне скучно и я хочу пообщаться с мастером</button>
+                                    <button type="button" class="diagnostic__option">Не крутится барабан</button>
+                                    <button type="button" class="diagnostic__option">Не работает кнопка включения</button>
+                                    <button type="button" class="diagnostic__option">Не выключается</button>
+                                    <button type="button" class="diagnostic__option">Иная проблема</button>
+                                    <button type="button" class="diagnostic__option">Не крутится барабан</button>
+                                    <button type="button" class="diagnostic__option">Не крутится барабан</button>
+                                    <button type="button" class="diagnostic__option">Не работает кнопка включения</button>
+                                </div>
+                                <div class="diagnostic__select-wrap">
+                                    <select class="diagnostic__select" name="problem" aria-label="Выберите проблему">
+                                        <option value="" selected disabled>Выберите проблему</option>
+                                        <option>Не включается</option>
+                                        <option>Не выключается</option>
+                                        <option>Не нагревает воду</option>
+                                        <option>Все работает, но мне скучно и я хочу пообщаться с мастером</option>
+                                        <option>Не крутится барабан</option>
+                                        <option>Не работает кнопка включения</option>
+                                        <option>Иная проблема</option>
+                                    </select>
+                                </div>
+                                <p class="diagnostic__hint"><span aria-hidden="true">△</span><span>Выберите проблему и узнайте её решение</span></p>
+                            </div>
+                        </div>
+                        <div class="diagnostic__image">
+                            <img src="src/assets/images/MashinkaStarFon.png" alt="" />
                         </div>
                     </div>
                 </section>
