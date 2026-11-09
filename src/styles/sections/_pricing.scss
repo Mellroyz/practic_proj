@@ -1,0 +1,198 @@
+.pricing {
+    width: 100%;
+    background: #ffffff;
+    margin-bottom: 35px;
+    scroll-margin-top: 90px;
+}
+
+.pricing__container {
+    max-width: 971px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.pricing__title {
+    margin: 0 0 50px;
+    font-family: 'TT Norms Std Trial Condensed', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.675px;
+    color: #111111;
+    text-align: center;
+}
+
+.pricing__table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing__row {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.pricing__row--header {
+    padding: 0 0 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.pricing__cell {
+    font-family: 'TT Norms Std Trial Condensed', sans-serif;
+    font-size: 16px;
+    color: #111111;
+}
+
+.pricing__cell--name {
+    flex: 1 1 auto;
+    font-weight: 400;
+    text-align: left;
+}
+
+.pricing__cell--parts {
+    flex: 0 0 200px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.pricing__cell--work {
+    flex: 0 0 200px;
+    text-align: right;
+    font-weight: 500;
+}
+
+.pricing__cell--free {
+    color: #aa3c94;
+    font-weight: 500;
+}
+
+.pricing__cell--header {
+    font-weight: 400;
+}
+
+@include max-w($tablet) {
+    .pricing {
+        scroll-margin-top: 168px;
+    }
+
+    .pricing__container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .pricing__cell--name {
+        flex: 0 0 54%;
+        min-width: 0;
+    }
+
+    .pricing__cell--parts {
+        flex: 0 0 28%;
+        min-width: 0;
+    }
+
+    .pricing__cell--work {
+        flex: 0 0 18%;
+        min-width: 0;
+    }
+}
+
+@include max-w($mobile_lg) {
+    .pricing__title {
+        font-size: clamp(34px, 6vw, 40px);
+        line-height: 1.15;
+        letter-spacing: -0.5px;
+    }
+}
+
+@include max-w($mobile_md) {
+    .pricing__title {
+        margin-bottom: 30px;
+        font-size: clamp(24px, 6.5vw, 26px);
+        line-height: 1.2;
+    }
+
+    .pricing__row--header {
+        display: none;
+    }
+
+    .pricing__row {
+        flex-wrap: wrap;
+        row-gap: 16px;
+        padding: 22px 0;
+    }
+
+    .pricing__cell--name {
+        flex: 0 0 100%;
+        min-width: 0;
+        font-weight: 700;
+    }
+
+    .pricing__cell--parts,
+    .pricing__cell--work {
+        display: flex;
+        flex: 0 0 100%;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 0;
+        text-align: left;
+        font-weight: 400;
+    }
+
+    .pricing__cell--work {
+        order: 1;
+    }
+
+    .pricing__cell--parts {
+        order: 2;
+    }
+
+    .pricing__cell--parts:empty {
+        display: none;
+    }
+
+    .pricing__cell--work::before {
+        content: 'Стоимость работ';
+    }
+
+    .pricing__cell--parts::before {
+        content: 'Стоимость запчасти';
+    }
+
+    .pricing__cell--free {
+        color: #aa3c94;
+        font-weight: 700;
+    }
+
+    .pricing__more {
+        margin-top: 40px;
+    }
+}
+
+.pricing__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px auto 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    font-family: 'TT Norms Std Trial Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #aa3c94;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.pricing__more:hover {
+    opacity: 0.7;
+}
+
+.pricing__more-icon {
+    font-size: 20px;
+    line-height: 1;
+}
