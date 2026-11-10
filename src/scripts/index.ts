@@ -1,3 +1,5 @@
+import { setupProfessors } from './professors';
+
 export function setupSite() {
-    console.log('Сайт загрузился');
+    setupProfessors();
 }
