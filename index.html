@@ -20,7 +20,7 @@
                             <ul class="header__nav-list">
                                 <li><a href="#diagnostic">Диагностика</a></li>
                                 <li><a href="#pricing">Стоимость</a></li>
-                                <li><a href="#">Мастера</a></li>
+                                <li><a href="#professors">Мастера</a></li>
                                 <li><a href="#">Отзывы</a></li>
                                 <li><a href="#">Вопросы</a></li>
                             </ul>
@@ -46,7 +46,7 @@
                             <ul class="header__nav-list">
                                 <li><a href="#diagnostic">Диагностика</a></li>
                                 <li><a href="#pricing">Стоимость</a></li>
-                                <li><a href="#">Мастера</a></li>
+                                <li><a href="#professors">Мастера</a></li>
                                 <li><a href="#">Отзывы</a></li>
                                 <li><a href="#">Вопросы</a></li>
                             </ul>
@@ -191,6 +191,38 @@
                         </button>
                     </div>
                 </section>
+                <section class="professors" id="professors" data-carousel aria-labelledby="professors-title">
+                    <div class="professors__container">
+                        <header class="professors__header">
+                            <p class="professors__eyebrow">В нашем штате 37 сотрудников</p>
+                            <h2 class="professors__title" id="professors-title">Мы большая команда профессионалов</h2>
+                        </header>
+
+                        <div class="professors__viewport" data-carousel-viewport tabindex="0" aria-label="Карточки мастеров">
+                            <ul class="professors__list" data-carousel-track></ul>
+                        </div>
+                        <template id="professors-card-template">
+                            <li class="professors__card">
+                                <img class="professors__image" alt="" />
+                                <div class="professors__card-content">
+                                    <h3 class="professors__name">Александр Федулов</h3>
+                                    <p class="professors__role">Ремонтник</p>
+                                    <ul class="professors__details">
+                                        <li>398 ремонтных работ</li>
+                                        <li>3 года в Fixper</li>
+                                        <li>Рейтинг Fixper 4,5</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </template>
+
+                        <nav class="professors__navigation" aria-label="Навигация по мастерам">
+                            <div class="professors__indicators" data-carousel-indicators role="group" aria-label="Позиции карусели мастеров"></div>
+                            <button class="professors__direction professors__direction--previous" data-carousel-previous type="button" aria-label="Предыдущий мастер">Назад</button>
+                            <button class="professors__direction professors__direction--next" data-carousel-next type="button" aria-label="Следующий мастер">Далее <span aria-hidden="true">⟶</span></button>
+                        </nav>
+                    </div>
+                </section>
             </main>
         </div>
         <footer class="footer">
@@ -204,7 +236,7 @@
                             <ul class="footer__nav-list">
                                 <li><a href="#diagnostic">Диагностика</a></li>
                                 <li><a href="#pricing">Стоимость</a></li>
-                                <li><a href="#">Мастера</a></li>
+                                <li><a href="#professors">Мастера</a></li>
                                 <li><a href="#">Отзывы</a></li>
                                 <li><a href="#">Вопросы</a></li>
                                 <li><a href="#">Карта сайта</a></li>
