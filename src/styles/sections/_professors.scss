@@ -2,7 +2,6 @@
     width: 100%;
     padding: 48px 0 42px;
     background: #fafafa;
-    scroll-margin-top: 90px;
 }
 
 .professors__header {
@@ -92,55 +91,7 @@
     content: '✓';
 }
 
-.professors__navigation {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.professors__indicators {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-right: auto;
-    color: #aa3c94;
-}
-
-.professors__direction {
-    height: 18px;
-    color: #111111;
-    font-family: $font-family-tt-norms;
-    font-size: 12px;
-}
-
-.professors__direction--previous {
-    flex: 0 0 46px;
-    width: 46px;
-}
-
-.professors__direction--next {
-    flex: 0 0 auto;
-    width: auto;
-    gap: 10px;
-    color: #aa3c94;
-}
-
-.professors__direction--next span {
-    position: static;
-    font-size: 20px;
-    line-height: 1;
-}
-
 @include max-w($tablet) {
-    .professors {
-        scroll-margin-top: 168px;
-    }
-
-    .professors__container {
-        padding: 0 30px;
-    }
-
     .professors__list {
         gap: 14px;
     }
@@ -171,21 +122,9 @@
         flex-basis: 100%;
     }
 
-    .professors__indicators .carousel__indicator {
-        margin: 0 2px;
-    }
-
-    .professors__navigation {
-        justify-content: space-between;
-        gap: 10px;
-    }
 }
 
 @include max-w($mobile_md) {
-    .professors__container {
-        padding: 0 20px;
-    }
-
     .professors__header {
         margin-bottom: 20px;
     }
@@ -194,7 +133,4 @@
         padding: 20px 22px 24px;
     }
 
-    .professors__indicators {
-        gap: 6px;
-    }
 }
