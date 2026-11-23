@@ -21,7 +21,7 @@
                                 <li><a href="#diagnostic">Диагностика</a></li>
                                 <li><a href="#pricing">Стоимость</a></li>
                                 <li><a href="#professors">Мастера</a></li>
-                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#reviews">Отзывы</a></li>
                                 <li><a href="#">Вопросы</a></li>
                             </ul>
                         </nav>
@@ -47,7 +47,7 @@
                                 <li><a href="#diagnostic">Диагностика</a></li>
                                 <li><a href="#pricing">Стоимость</a></li>
                                 <li><a href="#professors">Мастера</a></li>
-                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#reviews">Отзывы</a></li>
                                 <li><a href="#">Вопросы</a></li>
                             </ul>
                         </nav>
@@ -219,6 +219,35 @@
                         </nav>
                     </div>
                 </section>
+                <section class="reviews" id="reviews" data-carousel aria-labelledby="reviews-title">
+                    <div class="container reviews__container">
+                        <header class="reviews__header">
+                            <h2 class="reviews__title" id="reviews-title">Нас высоко оценивают</h2>
+                        </header>
+                        <div class="reviews__viewport" data-carousel-viewport tabindex="0" aria-label="Отзывы клиентов">
+                            <ul class="reviews__list" data-carousel-track></ul>
+                        </div>
+                        <template id="reviews-card-template">
+                            <li class="reviews__card">
+                                <div class="reviews__card-content">
+                                    <div class="reviews__author">
+                                        <img class="reviews__avatar" alt="" />
+                                        <div class="reviews__author-info">
+                                            <h3 class="reviews__name"></h3>
+                                            <p class="reviews__date"></p>
+                                        </div>
+                                    </div>
+                                    <p class="reviews__text"></p>
+                                </div>
+                            </li>
+                        </template>
+                        <nav class="carousel__navigation" aria-label="Навигация по отзывам">
+                            <div class="carousel__indicators" data-carousel-indicators role="group" aria-label="Позиции карусели отзывов"></div>
+                            <button class="carousel__direction carousel__direction--previous" data-carousel-previous type="button" aria-label="Предыдущий отзыв">Назад</button>
+                            <button class="carousel__direction carousel__direction--next" data-carousel-next type="button" aria-label="Следующий отзыв">Далее <span aria-hidden="true">⟶</span></button>
+                        </nav>
+                    </div>
+                </section>
             </main>
         </div>
         <footer class="footer">
@@ -233,7 +262,7 @@
                                 <li><a href="#diagnostic">Диагностика</a></li>
                                 <li><a href="#pricing">Стоимость</a></li>
                                 <li><a href="#professors">Мастера</a></li>
-                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#reviews">Отзывы</a></li>
                                 <li><a href="#">Вопросы</a></li>
                                 <li><a href="#">Карта сайта</a></li>
                             </ul>
