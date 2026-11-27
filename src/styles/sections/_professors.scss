@@ -129,9 +129,6 @@
 }
 
 @include max-w($mobile_md) {
-    .professors__container {
-        padding: 0 20px;
-    }
 
     .professors__header {
         margin-bottom: 20px;
@@ -140,5 +137,4 @@
     .professors__card-content {
         padding: 20px 22px 24px;
     }
-
 }

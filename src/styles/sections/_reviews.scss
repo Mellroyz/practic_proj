@@ -128,10 +128,6 @@
 }
 
 @include max-w($mobile_md) {
-    .reviews__container {
-        padding: 0 20px;
-    }
-
     .reviews__card-content {
         padding: 8px 22px 24px;
     }
